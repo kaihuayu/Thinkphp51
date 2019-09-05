@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$Title | default ='默认标题'}</title>
+    <link rel="stylesheet" type="text/css" href="http://pz.yxcj18.com/resource/web/css/bootstrap.min.css" />
+    <script type ="text/javascript" src="http://pz.yxcj18.com/resource/web/js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="http://pz.yxcj18.com/resource/web/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"> </div>
+            <div class="col-md-8">
+                <h2 class="text-center">信息表</h2>
+                <table class="table table-default table-bordered tble-hover text-center">
+                    <tr class="bg-primary">
+                        <td>ID</td>
+                        <td>姓名</td>
+                        <td>手机</td>
+                    </tr>
+                    {volist name="data" id="list"}
+                    <tr>
+                        <td>{$list.user_id}</td>
+                        <td>{$list.username}</td>
+                        <td>{$list.mobile}</td>
+                    </tr>
+                    {/volist}
+
+                </table>
+            </div>
+        <div class="col-md-2"> </div>
+    </div>
+</div>
+
+</body>
+</html>
