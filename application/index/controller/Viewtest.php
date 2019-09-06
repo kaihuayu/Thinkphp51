@@ -62,4 +62,7 @@ class Viewtest extends controller
       $this->view->assign('data', $data);
       return $this->view->fetch();
   }
+  public function test5(){
+        return $this->view->fetch();
+  }
 }

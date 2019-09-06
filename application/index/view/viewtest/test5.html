@@ -1,0 +1,9 @@
+{extend name="base\base"} //继承模板base
+
+{block name="content"}
+<h2>我是模板内容</h2>
+{/block}
+
+{block name="nav"}
+{__block__}  //继承block中的内容  所有类容都必须写到 block  中
+{/block}

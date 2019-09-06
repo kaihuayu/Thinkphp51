@@ -6,5 +6,7 @@ use think\Model;
 
 class User extends Model
 {
-
+    public function hasmanyorder(){
+        return $this->hasMany("Order",'user_id','user_id');
+    }
 }
