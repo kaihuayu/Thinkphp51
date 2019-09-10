@@ -1,5 +1,5 @@
 <?php
-
+/*hasmany 一对多*/
 
 namespace app\index\controller;
 use app\index\model\User;

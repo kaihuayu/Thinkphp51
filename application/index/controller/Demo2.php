@@ -1,5 +1,5 @@
 <?php
-
+/*静态代理*/
 
 namespace app\index\controller;
 use app\facade\Test;
