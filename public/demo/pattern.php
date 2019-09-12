@@ -13,8 +13,8 @@ class site{
 	}
     //获取本类唯一实例
     public static function getInstance($siteName="hello"){
-
-    	if(!self::$instance instanceof self){
+        //判断$instance 是否是本类的实例
+    	if(!self::$instance instanceof self){  //instdnceof关键字。使用这个关键字可以确定一个对象是类的实例、类的子类，还是实现了某个特定接口，并进行相应的操作。
     		self::$instance = new self($siteName);
     		echo "11111";
     	}
@@ -65,4 +65,3 @@ $sit2=register::get("sit2");
 //echo "</br>";
 //var_dump($sit->siteName);
 
-?>
